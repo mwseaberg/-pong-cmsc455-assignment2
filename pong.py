@@ -26,7 +26,7 @@ def get_pw(username):
     return None
 
 
-@app.route('/', methods=['GET'])
+@app.route('/pong', methods=['GET'])
 @auth.login_required
 def index():
     r = random.randint(1, 100)
